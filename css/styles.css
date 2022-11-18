@@ -6,6 +6,7 @@
     background-color: gainsboro;
     height: 100px;
     align-items: center;
+    transition: 0.5s;
 }
 
 .logo {
@@ -38,6 +39,10 @@
     display: none;
     position: relative;
     transition: 3s;
+    margin-left: 20px;
+    position: fixed;
+    top: 10px;
+    right: 50px;
 }
 
 .bar-item {
@@ -69,8 +74,7 @@
 .burger-bar-in-motion {
     background-color: white;
     rotate: 180deg;
-    transition: 3s;
-    
+    transition: 3s;  
 }
 
 .bi1-in-motion {
@@ -84,13 +88,42 @@
     transition: 3s;
    
 }
+.logo-vanish {
+    display: none;
+}
+.fill-in-list {
+    margin-top: 50px;
+    background-color: red;
+}
 
-/* .navigation-back {
-    display: block;
-    background-color: black;
-    flex-direction: column;
-    width: 100px;
-    height: 200px;
-    right: 0;
-    top: 100px;
-} */
+.wraper {
+    margin-top: 50px;
+    
+}
+.btn-add {
+    background-color: orange;
+    border: solid;
+    margin-bottom: 10px;
+}
+.clearall {
+    background-color: orange;
+    border: solid;
+    margin-bottom: 10px;
+}
+.input-grey {
+    background-color: lightslategray;
+}
+.delete-icon {
+    margin-left: 20px;
+}
+.fa-trash {
+    color: grey;
+}
+
+.clearall {
+    margin-top: 20px;
+}
+.li-style {
+    margin-top: 10px;
+    margin: 0 auto;
+}

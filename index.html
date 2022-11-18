@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
     <a href="index.html">
-        <img class=logo src="https://www.penguinrandomhouse.ca/themes/custom/penguin/images/logos/prh-logo.svg" alt="logo">
+        <img class=logo id="logo" src="https://www.penguinrandomhouse.ca/themes/custom/penguin/images/logos/prh-logo.svg" alt="logo">
     </a>
+    <div id="div-nav" >
     <nav class="navigation" id="navigation">
         <ul class="list-parent">
             <li>
@@ -30,15 +32,25 @@
             </li>
         </ul>
     </nav>
+</div>
+  
+    </header>
     <div class="burger-bar" id="burgerBar">
         <div class="bar-item bi1" id="bi1"></div>
         <div class="bar-item bi2" id="bi2"></div>
         <div class="bar-item bi3" id="bi3"></div>
 
     </div>
-    </header>
-    
 
+    <div class="wraper">
+        <form class="form-wraper" id="form-wraper">
+            <input type="text" class="input-form" id="input-form">
+            <button class="btn-add" id="btn-add">Add Item</button>
+            <ul class="ul-box"></ul>
+    </form>
+
+        <button class="clearall">Delete All</button>
+    </div>
 
     <script src="script.js"></script>
 </body>

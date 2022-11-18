@@ -5,13 +5,57 @@
     .navigation {
         display: none;
     }
+    .header-in-motion {
+        background-color: orange;
+        width: 100%;
+        height: 400px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: 0.5s;
+        align-items: flex-start;
+        padding-top: 10px;
+        padding-right: 50%;
+        position: relative;
+    
+        
+    }
+    .nav-drop {
+        display: flex;
+        height: 400px;
+
+    }
+    .list-parent {
+        flex-direction: column;
+        justify-content: space-evenly;
+      
+    }
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
+    .header-in-motion {
+        flex-flow: column;
+        height: 500px;
+        transition: 0.5s;
+
+    }
     .header {
+        padding-top: 100px;
+        height: auto;
+        padding-bottom: 10px;
+
+    }
+}
+
+@media (max-width: 450px) {
+    .header-in-motion {
         flex-wrap: wrap;
-        height: 200px;
+        height: 600px;
         justify-content: center;
+        position: relative;
+        padding-top: 100px;
+        transition: 0.5s;
+        
     }
 }
